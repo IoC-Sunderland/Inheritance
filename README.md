@@ -25,6 +25,9 @@ E.g. a car <strong> has a </strong> engine.
 Classes that exist to be inherited, but you do not instantiate them.
 
 # super()
+
+The use of super() means you don't have to explicitally create an object, it returns a proxy object.
+
 There are two typical use cases for super. In a class hierarchy with single inheritance, super can be used to refer to parent classes without naming them explicitly, thus making the code more maintainable. This use closely parallels the use of super in other programming languages.
 
 The second use case is to support cooperative multiple inheritance in a dynamic execution environment(doc.python.org).
@@ -33,3 +36,6 @@ The second use case is to support cooperative multiple inheritance in a dynamic 
 Python supports multiple inheritance (inheriting from more than one class)
 
 Few languages enable you to inherit from more than one class, instead they implement multiple interfaces.
+
+# MRO - Method Resolution Order
+The order in which Python looks for a method in a hierarchy of classes.

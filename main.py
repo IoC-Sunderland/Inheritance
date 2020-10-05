@@ -49,7 +49,6 @@ a = New(123, 'Gav')
 
 print(a.print_me())
 
-
 # super()
 class Base():
     def __init__(self, name):
@@ -67,9 +66,9 @@ class Child(Base, Base_Two):
         print('Child __init__ called...')
         super().__init__('Child')
 
+print('>>> super() example:\n')
 a = Child()
 
-print(a)
-
 # MRO - Method Resolution Order
-print(Child.__mro__)
+from pprint import pprint
+pprint(Child.__mro__)
