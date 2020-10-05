@@ -17,4 +17,5 @@ Classes that are used to create more complex types are referred to as components
 
 
 This models a <strong> has a </strong> relationship.
+
 <img src="img/Composition.png" width="200" height ="300">
