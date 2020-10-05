@@ -20,3 +20,16 @@ This models a <strong> has a </strong> relationship.
 E.g. a car <strong> has a </strong> engine.
 
 <img src="img/Composition.png" width="200" height ="300">
+
+# Abstract Base Classes
+Classes that exist to be inherited, but you do not instantiate them.
+
+
+
+# Multiple Inheritance
+Python supports multiple inheritance (inheriting from more than one class)
+
+Few languages enable you to inherit from more than one class, instead they implement multiple interfaces.
+
+
+
