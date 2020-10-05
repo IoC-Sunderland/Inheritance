@@ -41,7 +41,7 @@ class MyAbstractClass(ABC):
 
 # Create New class and inherit from Abstract Base Class
 class New(MyAbstractClass):
-    # Overrid the print_mew method
+    # Override the print_mew method
     def print_me(self):
         return f"ID: {self.id}\nName: {self.name}"
 
@@ -49,4 +49,27 @@ a = New(123, 'Gav')
 
 print(a.print_me())
 
+
+# super()
+class Base():
+    def __init__(self, name):
+        print('Base __init__ called...', name)
+
+
+class Base_Two():
+    def __init__(self, name):
+        print('Base_Two __init__ called...', name)
+
+
 # Multiple Inheritance
+class Child(Base, Base_Two):
+    def __init__(self):
+        print('Child __init__ called...')
+        super().__init__('Child')
+
+a = Child()
+
+print(a)
+
+# MRO - Method Resolution Order
+print(Child.__mro__)
