@@ -11,3 +11,5 @@ We implement inheritance by creating a sub class that inherit attributes and met
 
 
 # Composition
+
+<img src="img/Composition.png" width="200" height ="300">
