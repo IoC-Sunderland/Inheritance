@@ -21,6 +21,8 @@ E.g. a car <strong> has a </strong> engine.
 
 <img src="img/Composition.png" width="200" height ="300">
 
+See example: <strong>Composition</strong>
+
 # Abstract Base Classes
 Classes that exist to be inherited, but you do not instantiate them.
 

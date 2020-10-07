@@ -72,3 +72,27 @@ a = Child()
 # MRO - Method Resolution Order
 from pprint import pprint
 pprint(Child.__mro__)
+
+
+# Composition
+class Salary:
+    def __init__(self, pay, bonus):
+        self.pay = pay
+        self.bonus = bonus
+
+    def calculate_annual_salary(self):
+        return (self.pay*12) + self.bonus
+
+class Employee:
+    def __init__(self, name, age, pay, bonus):
+        self.name = name
+        self.age = age
+        # Create an instance of the Salary class
+        # to enable Composition
+        self.salary_object = Salary(pay, bonus)
+    
+    def annual_salary(self):
+        return self.salary_object.calculate_annual_salary()
+
+e = Employee('Average Joe', 32, 25000, 2500)
+print(e.annual_salary())
